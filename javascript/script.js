@@ -99,3 +99,12 @@
 // for (let x= 0; x<20; x++) {
 //    console.log(x); 
 // }
+
+// Functions
+// block of codes that perfoms a task
+function squire(number) {
+  return number * number;  //value to be returned when we call a function
+}
+const result= squire(5);
+console.log(result);
+// console.log(squire(10))

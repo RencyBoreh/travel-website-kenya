@@ -102,9 +102,22 @@
 
 // Functions
 // block of codes that perfoms a task
-function squire(number) {
-  return number * number;  //value to be returned when we call a function
-}
-const result= squire(5);
-console.log(result);
+// function squire(number) {
+//   return number * number;  //value to be returned when we call a function
+// }
+// const result= squire(5);
+// console.log(result);
 // console.log(squire(10))
+//  function greetings(name){
+//   console.log(`Hi ${name}`);
+//  }
+//  greetings("Rency");
+ 
+// const greetings= function(name){
+//   console.log(`Hello ${name}`)
+// }
+// greetings("Resly");
+ const greeting=(first_name,last_name)=>{
+  console.log(`Hello ${first_name} ${last_name}.`)
+ }
+ greeting("Rency","Boreh");

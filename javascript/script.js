@@ -153,9 +153,16 @@ const person = {
 
 
 // Object.entries()
-const fruits={Bananas:300,Oranges:200,Apples:500};
-let text="";  
-for(let [fruit,value] of Object.entries(fruits)){
-  text+=fruit + ":" + value + "<br>";
-}
-document.getElementById("demo").innerHTML = text;
+// const fruits={Bananas:300,Oranges:200,Apples:500};
+// let text="";  
+// for(let [fruit,value] of Object.entries(fruits)){
+//   text+=fruit + ":" + value + "<br>";
+// }
+// document.getElementById("demo").innerHTML = text;
+
+
+// Using JSON.stringify()-conerts objects int
+
+let name="Rency Boreh";
+let name2=name.charAt(Math.floor(Math.random() * 11 +1))
+console.log(name2)

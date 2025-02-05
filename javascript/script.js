@@ -121,3 +121,41 @@
   console.log(`Hello ${first_name} ${last_name}.`)
  }
  greeting("Rency","Boreh");
+ const student={
+  name:"Rency Boreh",
+  age:21,
+  course:"Software Engineering"
+ }
+ document.getElementById("paragraph").innerHTML=student;
+ // Create an Object
+const person = {
+  name: "John",
+  age: 30,
+  city: "New York"
+};
+// // Display Properties
+// document.getElementById("demo").innerHTML =
+// person.name + "," + person.age + "," + person.city;
+
+// Displaying Properties in a Loop
+// Build a text
+// let text='';
+// for(let x in person){
+//   text +=person[x];
+// }
+// document.getElementById("demo").innerHTML = text;
+
+
+// using object.values()
+// const myArray=Object.values(person);
+// // Displaying an array
+// document.getElementById("demo").innerHTML = myArray;
+
+
+// Object.entries()
+const fruits={Bananas:300,Oranges:200,Apples:500};
+let text="";  
+for(let [fruit,value] of Object.entries(fruits)){
+  text+=fruit + ":" + value + "<br>";
+}
+document.getElementById("demo").innerHTML = text;

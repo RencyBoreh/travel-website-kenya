@@ -198,20 +198,32 @@ const person = {
 //   grade="Missing Mark";
 // }
 // console.log(grade)
-let name="Rabby";
+// let name="Rabby";
 
-switch (name) {
-  case "Resly":
-    console.log("Yor Name is Resly");
-    break;
-  case "Rabby":
-    console.log("Yor Name is Rabby");
-    break;
-  case "Rency":
-    console.log("Yor Name is Rency");
-    break;
+// switch (name) {
+//   case "Resly":
+//     console.log("Yor Name is Resly");
+//     break;
+//   case "Rabby":
+//     console.log("Yor Name is Rabby");
+//     break;
+//   case "Rency":
+//     console.log("Yor Name is Rency");
+//     break;
 
-  default:
-    console.log("Enter a name!");
-    break;
-}
+//   default:
+//     console.log("Enter a name!");
+//     break;
+// }
+
+// Ternery operators
+// condition ? iftrye :iffalse;
+// let soup="Chicken Noodle Soup";
+// let response= soup ? "Yes, we have soup" : "Sorry,No soup today."
+// console.log(response)
+
+
+let con= confirm("OK===True\nCancel===False");
+console.log(con);
+let name=prompt("Enter Your Name:")
+console.log(name)

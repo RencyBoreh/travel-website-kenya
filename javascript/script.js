@@ -162,7 +162,39 @@ const person = {
 
 
 // Using JSON.stringify()-conerts objects int
+// let name="Rency Boreh";
+// let name2=name.charAt(Math.floor(Math.random() * 11 +1))
+// console.log(name2)
 
-let name="Rency Boreh";
-let name2=name.charAt(Math.floor(Math.random() * 11 +1))
-console.log(name2)
+let soup="chicken noodle soup";
+let reply;
+if (soup) {
+  reply=`Here's Your Order of ${soup}`;
+}
+else{
+  reply="Sorry we're out of soup";
+}
+console.log(reply);
+
+
+let testscore=30;
+let grade;
+if (testscore >= 90){
+  grade="A";
+}
+else if(testscore>=70){
+  grade="B";
+}
+else if(testscore>=60){
+  grade="C";
+}
+else if (testscore>=40){
+  grade="D";
+}
+else if(testscore < 40){
+  grade="E";
+}
+else{
+  grade="Missing Mark";
+}
+console.log(grade)

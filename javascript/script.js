@@ -223,7 +223,43 @@ const person = {
 // console.log(response)
 
 
-let con= confirm("OK===True\nCancel===False");
-console.log(con);
-let name=prompt("Enter Your Name:")
-console.log(name)
+// let con= confirm("OK===True\nCancel===False");
+// console.log(con);
+// let name=prompt("Enter Your Name:")
+// console.log(name)
+
+
+function Person(first,last,age,eye){
+  this.firstname=first;
+  this.lastname=last;
+  this.age=age;
+  this.eyecolor=eye;
+}
+
+const MyMother= new Person("Rency","Boreh",35,"Black");
+console.log(MyMother);
+
+let  playGame=confirm("Shall we play rock,paper,or scissors?");
+if (playGame){
+  let playerChoice=prompt("Please enter rock,paper or scissors.");
+   if (playerChoice){
+     let playerOne= playerChoice.trim().toLowerCase();
+      if(playerOne==="rock"|| playerOne==="paper"||playerOne==="scissors"){
+        let computerChoice=Math.floor(Math.random()*3+1);
+        let computer =computerChoice===1? "rock"
+        :computerChoice===2 ? "paper"
+        :"scissors";
+        // let result=
+        // playerOne===computer?"Tie Game!"
+        // :playerOne==="rock" && computer ==="paper"?
+      }
+      else{alert("You did not enter any choice.")}
+    }
+   
+   else{
+    alert("I guess you changed your mind.")
+   }
+}
+else{
+  alert("Ok,Maybe Next time");
+}

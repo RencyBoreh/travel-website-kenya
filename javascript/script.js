@@ -234,7 +234,7 @@ function Person(first,last,age,eye){
   this.lastname=last;
   this.age=age;
   this.eyecolor=eye;
-}
+} 
 
 const MyMother= new Person("Rency","Boreh",35,"Black");
 console.log(MyMother);

@@ -229,37 +229,92 @@ const person = {
 // console.log(name)
 
 
-function Person(first,last,age,eye){
-  this.firstname=first;
-  this.lastname=last;
-  this.age=age;
-  this.eyecolor=eye;
-} 
+// function Person(first,last,age,eye){
+//   this.firstname=first;
+//   this.lastname=last;
+//   this.age=age;
+//   this.eyecolor=eye;
+// } 
 
-const MyMother= new Person("Rency","Boreh",35,"Black");
-console.log(MyMother);
+// const MyMother= new Person("Rency","Boreh",35,"Black");
+// console.log(MyMother);
 
-let  playGame=confirm("Shall we play rock,paper,or scissors?");
-if (playGame){
-  let playerChoice=prompt("Please enter rock,paper or scissors.");
-   if (playerChoice){
-     let playerOne= playerChoice.trim().toLowerCase();
-      if(playerOne==="rock"|| playerOne==="paper"||playerOne==="scissors"){
-        let computerChoice=Math.floor(Math.random()*3+1);
-        let computer =computerChoice===1? "rock"
-        :computerChoice===2 ? "paper"
-        :"scissors";
-        // let result=
-        // playerOne===computer?"Tie Game!"
-        // :playerOne==="rock" && computer ==="paper"?
-      }
-      else{alert("You did not enter any choice.")}
-    }
+// let  playGame=confirm("Shall we play rock,paper,or scissors?");
+// if (playGame){
+//   let playerChoice=prompt("Please enter rock,paper or scissors.");
+//    if (playerChoice){
+//      let playerOne= playerChoice.trim().toLowerCase();
+//       if(playerOne==="rock"|| playerOne==="paper"||playerOne==="scissors"){
+//         let computerChoice=Math.floor(Math.random()*3+1);
+//         let computer =computerChoice===1? "rock"
+//         :computerChoice===2 ? "paper"
+//         :"scissors";
+//         // let result=
+//         // playerOne===computer?"Tie Game!"
+//         // :playerOne==="rock" && computer ==="paper"?
+//       }
+//       else{alert("You did not enter any choice.")}
+//     }
    
-   else{
-    alert("I guess you changed your mind.")
-   }
-}
-else{
-  alert("Ok,Maybe Next time");
-}
+//    else{
+//     alert("I guess you changed your mind.")
+//    }
+// }
+// else{
+//   alert("Ok,Maybe Next time");
+// }
+
+// ARRays
+const cars = ["Saab", "Volvo", "BMW"];
+document.getElementById("demo").innerHTML = cars;
+console.log(cars.sort);
+console.log(cars[0]);  //returns the frst element
+console.log(cars[cars.length-1]); //returns the last element of an array
+cars.push("Mazda");  //adds an element to an array
+console.log(cars)
+// another way to create an array is...
+const colors=new Array(); //new keyword can give unexpected results so avoid it
+colors.push("Orange");
+console.log(colors);
+console.log(typeof cars); //returns an object and to solve thiss...
+// 1 Array.isArray()
+console.log(Array.isArray(cars));  //returns true
+console.log(typeof cars);
+
+const fruits = ["Banana", "Orange", "Apple"];
+
+console.log(fruits instanceof Array);  // returns true 
+
+const myObj = {
+  name: "John",
+  age: 30,
+  cars: [
+    {name:"Ford", models:["Fiesta", "Focus", "Mustang"]},
+    {name:"BMW", models:["320", "X3", "X5"]},
+    {name:"Fiat", models:["500", "Panda"]}
+  ]
+} 
+console.log(myObj);
+
+console.log(cars.toString()); // converts the array to string
+
+console.log(cars.at(2)); //returns an array elent at a give position
+
+console.log(cars.join("*"));
+console.log(cars.pop()); //returns the vaue that was popped out
+
+cars.push("Honda"); //adds an alement to the end of an array
+console.log(cars);
+console.log(cars.shift()); //removes the first item and returns the value that was shifted
+console.log(cars);
+
+console.log(cars.unshift("Volvos")); //adds a new element to an array at the beginning and unshifts older elemnts and rturns the new array length
+console.log(cars);
+
+const myGirls=['Cecilie','lone'];
+const myBoys=['Emil','Tobias'];
+const myChildren= myGirls.concat(myBoys); //used t cncat two arrays to form one array
+console.log(myChildren);
+
+const fruit = ["Banana", "Orange", "Apple", "Mango"];
+console.log(fruit.copyWithin(3, 0));

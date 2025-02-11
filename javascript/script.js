@@ -265,56 +265,99 @@ const person = {
 // }
 
 // ARRays
-const cars = ["Saab", "Volvo", "BMW"];
-document.getElementById("demo").innerHTML = cars;
-console.log(cars.sort);
-console.log(cars[0]);  //returns the frst element
-console.log(cars[cars.length-1]); //returns the last element of an array
-cars.push("Mazda");  //adds an element to an array
-console.log(cars)
-// another way to create an array is...
-const colors=new Array(); //new keyword can give unexpected results so avoid it
-colors.push("Orange");
-console.log(colors);
-console.log(typeof cars); //returns an object and to solve thiss...
-// 1 Array.isArray()
-console.log(Array.isArray(cars));  //returns true
-console.log(typeof cars);
+// const cars = ["Saab", "Volvo", "BMW"];
+// document.getElementById("demo").innerHTML = cars;
+// console.log(cars.sort);
+// console.log(cars[0]);  //returns the frst element
+// console.log(cars[cars.length-1]); //returns the last element of an array
+// cars.push("Mazda");  //adds an element to an array
+// console.log(cars)
+// // another way to create an array is...
+// const colors=new Array(); //new keyword can give unexpected results so avoid it
+// colors.push("Orange");
+// console.log(colors);
+// console.log(typeof cars); //returns an object and to solve thiss...
+// // 1 Array.isArray()
+// console.log(Array.isArray(cars));  //returns true
+// console.log(typeof cars);
 
-const fruits = ["Banana", "Orange", "Apple"];
+// const fruits = ["Banana", "Orange", "Apple"];
 
-console.log(fruits instanceof Array);  // returns true 
+// console.log(fruits instanceof Array);  // returns true 
 
-const myObj = {
-  name: "John",
-  age: 30,
-  cars: [
-    {name:"Ford", models:["Fiesta", "Focus", "Mustang"]},
-    {name:"BMW", models:["320", "X3", "X5"]},
-    {name:"Fiat", models:["500", "Panda"]}
-  ]
-} 
-console.log(myObj);
+// const myObj = {
+//   name: "John",
+//   age: 30,
+//   cars: [
+//     {name:"Ford", models:["Fiesta", "Focus", "Mustang"]},
+//     {name:"BMW", models:["320", "X3", "X5"]},
+//     {name:"Fiat", models:["500", "Panda"]}
+//   ]
+// } 
+// console.log(myObj);
 
-console.log(cars.toString()); // converts the array to string
+// console.log(cars.toString()); // converts the array to string
 
-console.log(cars.at(2)); //returns an array elent at a give position
+// console.log(cars.at(2)); //returns an array elent at a give position
 
-console.log(cars.join("*"));
-console.log(cars.pop()); //returns the vaue that was popped out
+// console.log(cars.join("*"));
+// console.log(cars.pop()); //returns the vaue that was popped out
 
-cars.push("Honda"); //adds an alement to the end of an array
-console.log(cars);
-console.log(cars.shift()); //removes the first item and returns the value that was shifted
-console.log(cars);
+// cars.push("Honda"); //adds an alement to the end of an array
+// console.log(cars);
+// console.log(cars.shift()); //removes the first item and returns the value that was shifted
+// console.log(cars);
 
-console.log(cars.unshift("Volvos")); //adds a new element to an array at the beginning and unshifts older elemnts and rturns the new array length
-console.log(cars);
+// console.log(cars.unshift("Volvos")); //adds a new element to an array at the beginning and unshifts older elemnts and rturns the new array length
+// console.log(cars);
 
-const myGirls=['Cecilie','lone'];
-const myBoys=['Emil','Tobias'];
-const myChildren= myGirls.concat(myBoys); //used t cncat two arrays to form one array
-console.log(myChildren);
+// const myGirls=['Cecilie','lone'];
+// const myBoys=['Emil','Tobias'];
+// const myChildren= myGirls.concat(myBoys); //used t cncat two arrays to form one array
+// console.log(myChildren);
 
-const fruit = ["Banana", "Orange", "Apple", "Mango"];
-console.log(fruit.copyWithin(3, 0));
+// const fruit = ["Banana", "Orange", "Apple", "Mango"];
+// console.log(fruit.copyWithin(2, 0)); //method copies array elements to another position in an array:
+
+
+// // const myArray= [[1,2],[3,4],[5,6]];
+// // const newArr=myArray.flat();
+// // console.log(newArr);
+
+// const myArr = [1, 2, 3, 4, 5, 6];
+// const newArr = myArr.flatMap(x => [x, x * 10]);
+// console.log(newArr);
+
+//Splicing and Slicing Arrays
+
+// const fruits=['banana','orange','apple','mango'];
+// fruits.splice(2,0,"lemon",'kiwi'); //adds new items to an array
+// console.log(fruits);
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// // fruits.splice(2, 2, "Lemon", "Kiwi");
+// fruits.splice(0,1);//can be used to remove elemts
+// console.log(fruits);
+
+// const months = [" Jan", "Feb", "Mar", "Apr"];
+// const spliced = months.toSpliced(0, 1);
+// console.log(spliced); //returns the new array without changing the original array
+
+//slice is used to slice out a piece of an array into a new array
+// const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+// const citrus = fruits.slice(1);//Slice out a part of an array starting from array element 1 ("Orange"):
+// console.log(citrus);
+
+// loops
+for (let i = 0; i < 10; i++) {
+  const element = i;
+  console.log(element);
+}
+let names={nam:"Rency",age:21,school:"KYU"};
+for(let name in names){
+console.log(names[name]);
+}
+let numbers=[1,2,3,5,7,8,9,44];
+for(let x in numbers){
+  console.log(numbers[x]);
+}

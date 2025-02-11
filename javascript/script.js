@@ -348,41 +348,52 @@ const person = {
 // const citrus = fruits.slice(1);//Slice out a part of an array starting from array element 1 ("Orange"):
 // console.log(citrus);
 
-// loops
-for (let i = 0; i < 10; i++) {
-  const element = i;
-  console.log(element);
-}
-let names={nam:"Rency",age:21,school:"KYU"};
-for(let name in names){
-console.log(names[name]);
-}
-let numbers=[1,2,3,5,7,8,9,44];
-for(let x in numbers){
-  console.log(numbers[x]);
-}
-// looping over an array
-let cars=['BMW','Volvo','Mini'];
-for(let car of cars){
-  console.log(car)
-}
-// looping through a string
-let myName="JEPTANUI";
-for(let mine of myName){
-  console.log(mine);
-}
-// while loop
-let a=0;
-while (a<10) {
-  console.log(a);
-  a++;
-}
+// // loops
+// for (let i = 0; i < 10; i++) {
+//   const element = i;
+//   console.log(element);
+// }
+// let names={nam:"Rency",age:21,school:"KYU"};
+// for(let name in names){
+// console.log(names[name]);
+// }
+// let numbers=[1,2,3,5,7,8,9,44];
+// for(let x in numbers){
+//   console.log(numbers[x]);
+// }
+// // looping over an array
+// let cars=['BMW','Volvo','Mini'];
+// for(let car of cars){
+//   console.log(car)
+// }
+// // looping through a string
+// let myName="JEPTANUI";
+// for(let mine of myName){
+//   console.log(mine);
+// }
+// // while loop
+// let a=0;
+// while (a<10) {
+//   console.log(a);
+//   a++;
+// }
 
+// let text='';
+// let i=0;
+// do {
+//   text = "The number is " + i;
+//   console.log(text);
+//   i++;
+// }
+// while (i < 10);
 let text='';
-let i=0;
-do {
-  text = "The number is " + i;
+for (let i = 0; i < 10; i++) {
+  if (i === 7) { break; }
+  text = "The number is " + i ;
   console.log(text);
-  i++;
 }
-while (i < 10);
+for (let i = 0; i < 10; i++) {
+  if (i === 7) { continue; }
+  text = "The number is " + i ;
+  console.log(text);
+}

@@ -13,7 +13,7 @@
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
   <!-- NAVBAR -->
 <div class="container-fluid">
-    <div class="navbar navbar-expand-sm bg-primary navbar-dark fixed-top">
+    <div class="navbar navbar-expand-sm bg-primary pe-3 navbar-dark fixed-top">
       <a href="#" class="navbar-brand"><img src="" alt="">Logo</a>
       <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapse1">
         <span class="navbar-toggler-icon"></span>
@@ -38,7 +38,7 @@
         <H2>Discover The <span class="text-info">Africa's</span> Hidden Wonders</H2>
         <p>"Find the unique moments and hidden gems that ignite unforgettable experiences across Africa. From rare encounters to remarkable destinations, we help you uncover the spark that turns every trip into a cherished story."</p>
         <div class="d-grid">
-          <button class="btn btn-primary btn-block"><a href="#" class="text-white" style="text-decoration: none;">Plan Your Trip</a></button>
+          <button class="btn btn-primary btn-block"><a href="#destinations" class="text-white" style="text-decoration: none;">Plan Your Trip</a></button>
         </div>
      </div>
   </div>
@@ -80,13 +80,125 @@
  </div>
 
  <!-- Destinations page -->
-  <div class="container-fluid bg-light" style="height: 100vh;" id="destinations"> </div>
+  <div class="container-fluid mt-4 pt-4" id="destinations">
+    <div class="container-fluid bg-white">
+      <h2 class="text-primary">Top Destinations</h2>
+      <p></p>
+    </div>
+    <div class="container-fluid p-5 row">
+      <div class="container p-3 shadow-lg col-sm-12 col-md-5 col-lg-4">
+        <img src="/Hidden Wonders/images/maasai mara.PNG" alt="" class="img-fluid mb-2">
+        <h3 class="mb-2 ">Maasai Mara National Reserve, Kenya</h3>
+        <p>Known for its incredible wildlife and stunning landscapes, the Maasai Mara is one of Africa's most famous safari destinations.</p>
+        <div class="d-grid">
+          <button class="btn btn-primary btn-block">More Details</button>
+        </div>
+      </div>
+      <div class="container p-3 shadow-lg col-sm-12 col-md-5 col-lg-4">
+        <img src="/Hidden Wonders/images/cape town.PNG" alt="" class="img-fluid">
+        <h3 class="mb-2 ">Cape Town, South Africa</h3>
+        <p>This vibrant city offers a mix of stunning landscapes, rich history, and diverse cultures.</p>
+        <div class="d-grid">
+          <button class="btn btn-primary btn-block">More Details</button>
+        </div>
+      </div>
+      </div>
+      <div class="container-fluid p-5 row">
+        <div class="container p-3 shadow-lg col-sm-12 col-md-5 col-lg-4">
+          <h3 class="mb-2 ">Victoria Falls, Zimbabwe/Zambia</h3>
+          <p>Known as the "Smoke That Thunders," Victoria Falls is one of the largest and most famous waterfalls in the world.</p>
+          <img src="/Hidden Wonders/images/falls.PNG" alt="" class="img-fluid">
+          <div class="d-grid mt-3">
+            <button class="btn btn-primary btn-block">More Details</button>
+          </div>
+        </div>
+        <div class="container p-3 shadow-lg col-sm-12 col-md-5 col-lg-4">
+          <img src="/Hidden Wonders/images/skeleton coast.PNG" alt="" class="img-fluid">
+          <h3 class="mb-2 ">Skeleton Coast, Namibia</h3>
+          <p>The Skeleton Coast is known for its desolate beauty, where the desert meets the ocean, creating an eerie yet captivating landscape.</p>
+          <div class="d-grid ">
+            <button class="btn btn-primary btn-block">More Details</button>
+          </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Travel stories page -->
-  <div class="container-fluid bg-white" style="height: 100vh;" id="stories"></div>
+  <div class="container-fluid bg-info" style="height: 100vh;" id="stories">
+  <div class="container-fluid bg-white">
+      <h2 class="text-center text-primary">Latest Stories</h2>
+      <p></p>
+  </div>
+  <div class="container-fluid mt-2 p-2 row bg-success">
+      <div class="container col-sm-12 col-md-7 col-lg-7 bg-warning">1</div>
+      <div class="container col-sm-12 col-md-5 col-lg-5 bg-danger">
+        <div class="container bg-white row">
+          <div class="container col bg-secondary">1</div>
+          <div class="container col bg-danger">2</div>
+        </div>
+        <div class="container row bg-warning">
+          <div class="container col bg-white">1</div>
+          <div class="container col bg-info">2</div>
+        </div>
+        <div class="container row bg-primary">
+          <div class="container col bg-secondary">1</div>
+          <div class="container col bg-danger">2</div>
+        </div>
+      </div>
+  </div>
+
+  </div>
   <!-- inspirations page-->
-  <div class="container-fluid bg-light" style="height: 100vh;" id="inspirations"></div>
+  <div class="container-fluid bg-light mt-4" style="height: 100vh;" id="inspirations">
+    <div class="container fluid">
+      <h2 class="text-center text-primary">Highlights</h2>
+    </div>
+    <div class="container-fluid p-3 bg-success row">
+      <div class="container col bg-white">1</div>
+      <div class="container bg-info col">2</div>
+      <div class="container bg-warning pt-2 col">
+       <div class="container bg-danger ">1</div>
+       <div class="container bg-white mt-5">2</div>
+      </div>
+    </div>
+
+
+  </div>
   <!-- contact page -->
-  <div class="container-fluid bg-white" style="height: 100vh;" id="contact"></div>
+  <div class="container-fluid" style="height: 100vh;" id="contact">
+    <div class="container">
+      <h2 class="text-primary text-center">Contact Us</h2>
+      <h4 class="text-center">Get Your Travel Inspirations <br> direct to your inbox.
+      </h4>
+    </div>
+    <div class="container-fluid  row p-3">
+      <div class="container col-sm-12 col-md-7 col-lg-6 p-2 bg-light shadow">
+        <form>
+          <label for="name" class="form-label">FullNames:</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter Your Name...">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control" name="email" id="email" placeholder="Enter Your Email...">
+          <label for="phonenumber" class="form-label">PhoneNo:</label>
+          <input type="number" class="form-control" name="phonenumber" id="phonenumber" placeholder="PhoneNumber...">
+          <label for="comment" class="form-label">Message:</label>
+          <textarea name="comment" id="comment" cols="30" rows="5" class="form-control">
+          </textarea>
+          <div class="form-check mt-2">
+            <input type="checkbox" name="check" id="check" class="form-check-input">
+            Remember me
+          </div>
+          <div class="d-grid mt-4">
+            <button class="btn btn-primary btn-block">Send</button>
+          </div>
+         </form>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- footer -->
+   <footer class="bg-secondary text-light text-center">
+    hhh
+   </footer>
 </body>
 </html>

@@ -386,14 +386,32 @@ const person = {
 //   i++;
 // }
 // while (i < 10);
-let text='';
-for (let i = 0; i < 10; i++) {
-  if (i === 7) { break; }
-  text = "The number is " + i ;
-  console.log(text);
+// let text='';
+// for (let i = 0; i < 10; i++) {
+//   if (i === 7) { break; }
+//   text = "The number is " + i ;
+//   console.log(text);
+// }
+// for (let i = 0; i < 10; i++) {
+//   if (i === 7) { continue; }
+//   text = "The number is " + i ;
+//   console.log(text);
+// }
+
+// Home Made Iterable
+function myNumbers() {
+  let n = 0;
+  return {
+    next: function() {
+      n += 10;
+      return {value:n, done:false};
+    }
+  };
 }
-for (let i = 0; i < 10; i++) {
-  if (i === 7) { continue; }
-  text = "The number is " + i ;
-  console.log(text);
-}
+
+// Create Iterable
+const n = myNumbers();
+console.log(n.next()) // Returns 10
+console.log(n.next()) // Returns 20
+console.log(n.next()) // Returns 30
+console.log(n.next())

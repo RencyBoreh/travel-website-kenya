@@ -417,24 +417,40 @@ console.log(n.next()) // Returns 30
 console.log(n.next())
 
 
+// class Car {
+//   constructor(brand) {
+//     this.carname = brand;
+//   }
+//   present() {
+//     return 'I have a ' + this.carname;
+//   }
+// }
+
+// class Model extends Car {
+//   constructor(brand, mod) {
+//     super(brand);
+//     this.model = mod;
+//   }
+//   show() {
+//     return this.present() + ', it is a ' + this.model;
+//   }
+// }
+
+// let myCar = new Model("Ford", "Mustang");
+// document.getElementById("demo").innerHTML = myCar.show();
+
 class Car {
   constructor(brand) {
     this.carname = brand;
   }
-  present() {
-    return 'I have a ' + this.carname;
+  get cnam() {
+    return this.carname;
+  }
+  set cnam(x) {
+    this.carname = x;
   }
 }
 
-class Model extends Car {
-  constructor(brand, mod) {
-    super(brand);
-    this.model = mod;
-  }
-  show() {
-    return this.present() + ', it is a ' + this.model;
-  }
-}
+const myCar = new Car("Ford");
 
-let myCar = new Model("Ford", "Mustang");
-document.getElementById("demo").innerHTML = myCar.show();
+document.getElementById("demo").innerHTML = myCar.cnam;

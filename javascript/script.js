@@ -471,3 +471,10 @@ function myMove() {
     }
   }
 }
+
+function over(obj){
+  obj.innerHTML="HELLO";
+}
+function out(obj){
+  obj.innerHTML="GoodMorning";
+}

@@ -117,22 +117,22 @@
 //   console.log(`Hello ${name}`)
 // }
 // greetings("Resly");
- const greeting=(first_name,last_name)=>{
-  console.log(`Hello ${first_name} ${last_name}.`)
- }
- greeting("Rency","Boreh");
- const student={
-  name:"Rency Boreh",
-  age:21,
-  course:"Software Engineering"
- }
- document.getElementById("paragraph").innerHTML=student;
- // Create an Object
-const person = {
-  name: "John",
-  age: 30,
-  city: "New York"
-};
+//  const greeting=(first_name,last_name)=>{
+//   console.log(`Hello ${first_name} ${last_name}.`)
+//  }
+//  greeting("Rency","Boreh");
+//  const student={
+//   name:"Rency Boreh",
+//   age:21,
+//   course:"Software Engineering"
+//  }
+//  document.getElementById("paragraph").innerHTML=student;
+//  // Create an Object
+// const person = {
+//   name: "John",
+//   age: 30,
+//   city: "New York"
+// };
 // // Display Properties
 // document.getElementById("demo").innerHTML =
 // person.name + "," + person.age + "," + person.city;
@@ -398,83 +398,91 @@ const person = {
 //   console.log(text);
 // }
 
-// Home Made Iterable
-function myNumbers() {
-  let n = 0;
-  return {
-    next: function() {
-      n += 10;
-      return {value:n, done:false};
-    }
-  };
-}
+// // Home Made Iterable
+// function myNumbers() {
+//   let n = 0;
+//   return {
+//     next: function() {
+//       n += 10;
+//       return {value:n, done:false};
+//     }
+//   };
+// }
 
-// Create Iterable
-const n = myNumbers();
-console.log(n.next()) // Returns 10
-console.log(n.next()) // Returns 20
-console.log(n.next()) // Returns 30
-console.log(n.next())
+// // Create Iterable
+// const n = myNumbers();
+// console.log(n.next()) // Returns 10
+// console.log(n.next()) // Returns 20
+// console.log(n.next()) // Returns 30
+// console.log(n.next())
 
+
+// // class Car {
+// //   constructor(brand) {
+// //     this.carname = brand;
+// //   }
+// //   present() {
+// //     return 'I have a ' + this.carname;
+// //   }
+// // }
+
+// // class Model extends Car {
+// //   constructor(brand, mod) {
+// //     super(brand);
+// //     this.model = mod;
+// //   }
+// //   show() {
+// //     return this.present() + ', it is a ' + this.model;
+// //   }
+// // }
+
+// // let myCar = new Model("Ford", "Mustang");
+// // document.getElementById("demo").innerHTML = myCar.show();
 
 // class Car {
 //   constructor(brand) {
 //     this.carname = brand;
 //   }
-//   present() {
-//     return 'I have a ' + this.carname;
+//   get cnam() {
+//     return this.carname;
+//   }
+//   set cnam(x) {
+//     this.carname = x;
 //   }
 // }
 
-// class Model extends Car {
-//   constructor(brand, mod) {
-//     super(brand);
-//     this.model = mod;
-//   }
-//   show() {
-//     return this.present() + ', it is a ' + this.model;
+// const myCar = new Car("Ford");
+
+// document.getElementById("demo").innerHTML = myCar.cnam;
+
+// function myMove() {
+//   let id = null;
+//   const elem = document.getElementById("animate");   
+//   let pos = 0;
+//   clearInterval(id);
+//   id = setInterval(frame, 2);
+//   function frame() {
+//     if (pos == 350) {
+//       clearInterval(id);
+//     } else {
+//       pos++; 
+//       elem.style.top = pos + "px"; 
+//       elem.style.left = pos + "px"; 
+//     }
 //   }
 // }
 
-// let myCar = new Model("Ford", "Mustang");
-// document.getElementById("demo").innerHTML = myCar.show();
+// function over(obj){
+//   obj.innerHTML="HELLO";
+// }
+// function out(obj){
+//   obj.innerHTML="GoodMorning";
+// }
 
-class Car {
-  constructor(brand) {
-    this.carname = brand;
-  }
-  get cnam() {
-    return this.carname;
-  }
-  set cnam(x) {
-    this.carname = x;
-  }
-}
 
-const myCar = new Car("Ford");
-
-document.getElementById("demo").innerHTML = myCar.cnam;
-
-function myMove() {
-  let id = null;
-  const elem = document.getElementById("animate");   
-  let pos = 0;
-  clearInterval(id);
-  id = setInterval(frame, 2);
-  function frame() {
-    if (pos == 350) {
-      clearInterval(id);
-    } else {
-      pos++; 
-      elem.style.top = pos + "px"; 
-      elem.style.left = pos + "px"; 
-    }
-  }
-}
-
-function over(obj){
-  obj.innerHTML="HELLO";
-}
-function out(obj){
-  obj.innerHTML="GoodMorning";
+let username;
+function changecontent(){
+ username=document.getElementById("name").value;
+  console.log(username);
+  document.getElementById("para1").innerHTML=`Hello ${username}`;
 }

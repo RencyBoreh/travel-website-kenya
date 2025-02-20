@@ -486,3 +486,20 @@ function changecontent(){
   console.log(username);
   document.getElementById("para1").innerHTML=`Hello ${username}`;
 }
+
+let a;
+let b;
+let c;
+// let area;
+document.getElementById('btn1').onclick= function(){
+  a=document.getElementById("a").value;
+  b=document.getElementById("b").value;
+ a=Number(a);
+ b=Number(b);
+ c=((a*a) + (b*b));
+ c=Math.sqrt(c);
+ c=Math.round(c);
+ console.log(c)
+ document.getElementById("c").innerHTML=`The Value of C is ${c}`;
+ 
+}

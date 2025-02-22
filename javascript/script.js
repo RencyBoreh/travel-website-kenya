@@ -503,3 +503,27 @@ document.getElementById('btn1').onclick= function(){
  document.getElementById("c").innerHTML=`The Value of C is ${c}`;
  
 }
+
+
+
+function addTask() {
+  const taskInput = document.getElementById('taskInput');
+  const taskList = document.getElementById('taskList');
+
+  if (taskInput.value.trim() !== "") {
+      const listItem = document.createElement('li');
+      listItem.className = 'list-group-item d-flex justify-content-between align-items-center';
+      listItem.innerHTML = `
+          ${taskInput.value}
+          <button class="btn btn-danger btn-sm" onclick="removeTask(this)">Delete</button>
+      `;
+
+      taskList.appendChild(listItem);
+      taskInput.value = '';
+  }
+}
+
+function removeTask(button) {
+  const listItem = button.parentElement;
+  listItem.remove();
+}

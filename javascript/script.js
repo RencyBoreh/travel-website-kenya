@@ -527,3 +527,20 @@ function removeTask(button) {
   const listItem = button.parentElement;
   listItem.remove();
 }
+
+// function showContent(content1){
+// document.querySelectorAll(".content").forEach(function(section){
+//   section.computedStyleMap.display="none"
+// });
+// //Show selected content section
+// document.getElementById().style.display="block";
+// }
+function showContent(contentId) {
+  // Hide all content sections
+  document.querySelectorAll('.content').forEach(function(section) {
+      section.style.display = 'none';
+  });
+
+  // Show the selected content section
+  document.getElementById(contentId).style.display = 'block';
+}
